@@ -28,7 +28,7 @@ public class DelegatingPagerAdapter extends PagerAdapter {
 
     private final PagerAdapter mDelegate;
 
-    DelegatingPagerAdapter(@NonNull final PagerAdapter delegate) {
+    public DelegatingPagerAdapter(@NonNull final PagerAdapter delegate) {
         this.mDelegate = delegate;
         delegate.registerDataSetObserver(new MyDataSetObserver(this));
     }
