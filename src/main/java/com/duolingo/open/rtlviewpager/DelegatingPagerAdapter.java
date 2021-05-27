@@ -33,7 +33,7 @@ public class DelegatingPagerAdapter extends PagerAdapter {
         delegate.registerDataSetObserver(new MyDataSetObserver(this));
     }
 
-    PagerAdapter getDelegate() {
+    public PagerAdapter getDelegate() {
         return mDelegate;
     }
 
